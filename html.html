@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi PWA Personalizada</title>
+    <link rel="stylesheet" href="static/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Mi Aplicación de Tareas</h1>
+    </header>
+
+    <main>
+        <form id="taskForm">
+            <label for="taskTitle">Título de la Tarea</label>
+            <input type="text" id="taskTitle" name="taskTitle" placeholder="Ingresar titulo de la tarea">
+            
+            <label for="taskContent">Descripción de la Tarea</label>
+            <textarea id="taskContent" name="taskContent" placeholder="Detalles de la tarea"></textarea>
+            
+            <button type="submit">Agregar Tarea</button>
+        </form>
+        
+        <section id="taskList">
+            <h2>Tareas Guardadas</h2>
+            <ul id="tasks">
+                <!-- Aquí se mostrarán las tareas guardadas -->
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Mi PWA Personalizada</p>
+    </footer>
+
+    <script src="static/js/app.js"></script> <!-- Archivo JavaScript -->
+</body>
+</html>
